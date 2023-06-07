@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
-namespace BookishWeb.Controllers
+namespace BookishWeb.Areas.Customer.Controllers
 {
     public class HomeController : Controller
     {
