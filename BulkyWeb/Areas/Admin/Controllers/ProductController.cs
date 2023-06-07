@@ -106,5 +106,12 @@ namespace BookishWeb.Areas.Admin.Controllers
                 return View(productVM);
             }
         }
+        #region API CALLS
+        public IActionResult GetAll()
+        {
+            List<Product> objProductList = _unitOfWork.Product.GetAll(includeProperties: "Category").ToList();
+            return Json(new {data=objProductList});
+        }
+        #endregion
     }
 }
