@@ -1,7 +1,7 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel;
 
-namespace Bulky.Models
+namespace Bookish.Models
 {
     public class ErrorViewModel
     {
